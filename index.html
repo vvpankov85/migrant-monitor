@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ИС Контроля перемещения мигрантов</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@10.3.0/ol.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header MVD style -->
+    <header id="app-header">
+        <div class="header-top">
+            <div class="header-left">
+                <div class="emblem">
+                    <svg viewBox="0 0 40 48" fill="none" class="emblem-icon">
+                        <path d="M20 2L4 10v14c0 12 8 18 16 22 8-4 16-10 16-22V10L20 2z" fill="#1a3a6b" stroke="#c5a84a" stroke-width="1.5"/>
+                        <path d="M20 8l-10 5v9c0 8 5 12 10 15 5-3 10-7 10-15v-9L20 8z" fill="#1a3a6b" stroke="#c5a84a" stroke-width="0.8"/>
+                        <path d="M17 20h6v8h-6z" fill="#c5a84a"/>
+                        <circle cx="20" cy="17" r="3" fill="#c5a84a"/>
+                        <path d="M14 30l6-4 6 4" stroke="#c5a84a" stroke-width="1" fill="none"/>
+                    </svg>
+                </div>
+                <div class="header-titles">
+                    <div class="header-ministry">МИНИСТЕРСТВО ВНУТРЕННИХ ДЕЛ РОССИЙСКОЙ ФЕДЕРАЦИИ</div>
+                    <div class="header-system">ИС Контроля перемещения мигрантов</div>
+                </div>
+                <span class="header-badge">ПРОТОТИП</span>
+            </div>
+            <div class="header-stats" id="header-stats">
+                <div class="stat-item">
+                    <span class="stat-value" id="stat-migrants">—</span>
+                    <span class="stat-label">мигрантов</span>
+                </div>
+                <div class="stat-item stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-value" id="stat-points">—</span>
+                    <span class="stat-label">геоточек</span>
+                </div>
+                <div class="stat-item stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-value" id="stat-incidents">—</span>
+                    <span class="stat-label">инцидентов</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main layout -->
+    <div id="app-layout">
+        <!-- Sidebar -->
+        <aside id="sidebar">
+            <!-- Basemap selector -->
+            <section class="sidebar-section">
+                <h3 class="section-title">Подложка карты</h3>
+                <select id="basemap-select" class="basemap-select">
+                    <option value="osm">OpenStreetMap</option>
+                    <option value="yandex-map">Яндекс Карта</option>
+                    <option value="yandex-sat">Яндекс Спутник</option>
+                    <option value="esri-sat">ESRI Спутник</option>
+                    <option value="google-map">Google Карта</option>
+                    <option value="google-sat">Google Спутник</option>
+                    <option value="google-terrain">Google Рельеф</option>
+                    <option value="carto-dark" selected>CartoDB Тёмная</option>
+                    <option value="carto-light">CartoDB Светлая</option>
+                </select>
+            </section>
+
+            <!-- Layer controls -->
+            <section class="sidebar-section">
+                <h3 class="section-title">Слои карты</h3>
+                <div class="layer-controls">
+                    <label class="layer-toggle">
+                        <input type="checkbox" id="layer-heatmap" checked>
+                        <span class="toggle-track"><span class="toggle-thumb"></span></span>
+                        <span class="toggle-label">Тепловая карта</span>
+                    </label>
+                    <label class="layer-toggle">
+                        <input type="checkbox" id="layer-points" checked>
+                        <span class="toggle-track"><span class="toggle-thumb"></span></span>
+                        <span class="toggle-label">Геоточки</span>
+                    </label>
+                    <label class="layer-toggle">
+                        <input type="checkbox" id="layer-clusters">
+                        <span class="toggle-track"><span class="toggle-thumb"></span></span>
+                        <span class="toggle-label">Кластеры</span>
+                    </label>
+                    <label class="layer-toggle">
+                        <input type="checkbox" id="layer-geozones" checked>
+                        <span class="toggle-track"><span class="toggle-thumb"></span></span>
+                        <span class="toggle-label">Геозоны</span>
+                    </label>
+                    <label class="layer-toggle">
+                        <input type="checkbox" id="layer-work-zones" checked>
+                        <span class="toggle-track"><span class="toggle-thumb"></span></span>
+                        <span class="toggle-label">Рабочие зоны</span>
+                    </label>
+                    <label class="layer-toggle">
+                        <input type="checkbox" id="layer-incidents" checked>
+                        <span class="toggle-track"><span class="toggle-thumb"></span></span>
+                        <span class="toggle-label">Инциденты</span>
+                    </label>
+                    <label class="layer-toggle">
+                        <input type="checkbox" id="layer-scenarios" checked>
+                        <span class="toggle-track"><span class="toggle-thumb"></span></span>
+                        <span class="toggle-label">📡🛒🔴 Сценарии</span>
+                    </label>
+                </div>
+            </section>
+
+            <!-- Tabs: Incidents / Scenarios -->
+            <div class="sidebar-tabs">
+                <button class="sidebar-tab active" data-tab="incidents">Инциденты</button>
+                <button class="sidebar-tab" data-tab="scenarios">Сценарии</button>
+            </div>
+
+            <!-- Incidents Panel -->
+            <div id="incidents-panel" style="display:flex;flex-direction:column;flex:1;overflow:hidden">
+                <!-- Incident filter -->
+                <section class="sidebar-section">
+                    <h3 class="section-title">Фильтр инцидентов</h3>
+                    <div class="filter-group">
+                        <label class="filter-chip active" data-type="all">Все</label>
+                        <label class="filter-chip" data-type="route_deviation">
+                            <span class="dot" style="background:#cc0000"></span> Маршрут
+                        </label>
+                        <label class="filter-chip" data-type="cluster">
+                            <span class="dot" style="background:#e6850a"></span> Скопления
+                        </label>
+                        <label class="filter-chip" data-type="geozone_violation">
+                            <span class="dot" style="background:#7c3aed"></span> Геозоны
+                        </label>
+                        <label class="filter-chip" data-type="time_anomaly">
+                            <span class="dot" style="background:#1e4d8c"></span> Время
+                        </label>
+                    </div>
+                    <div class="filter-group">
+                        <label class="filter-chip" data-type="gps_discrepancy">
+                            <span class="dot" style="background:#e63946"></span> GPS≠Опер.
+                        </label>
+                        <label class="filter-chip" data-type="phone_left">
+                            <span class="dot" style="background:#d4a017"></span> Тел.оставл.
+                        </label>
+                        <label class="filter-chip" data-type="shadow_employment">
+                            <span class="dot" style="background:#2d6a4f"></span> Сер.занят.
+                        </label>
+                        <label class="filter-chip" data-type="night_deviation">
+                            <span class="dot" style="background:#6c3483"></span> Ночн.откл.
+                        </label>
+                        <label class="filter-chip" data-type="crime_scene">
+                            <span class="dot" style="background:#c0392b"></span> Инцидент
+                        </label>
+                    </div>
+                    <div class="filter-group">
+                        <label class="severity-chip active" data-severity="all">Все</label>
+                        <label class="severity-chip" data-severity="high">Высокий</label>
+                        <label class="severity-chip" data-severity="medium">Средний</label>
+                        <label class="severity-chip" data-severity="low">Низкий</label>
+                    </div>
+                </section>
+
+                <!-- Incident list -->
+                <section class="sidebar-section incident-list-section">
+                    <h3 class="section-title">
+                        Инциденты
+                        <span class="incident-count" id="incident-count">0</span>
+                    </h3>
+                    <div id="incident-list" class="incident-list"></div>
+                </section>
+            </div>
+
+            <!-- Scenarios Panel -->
+            <div id="scenarios-panel" style="display:none;flex-direction:column;flex:1;overflow:hidden">
+                <!-- Legend -->
+                <section class="sidebar-section">
+                    <h3 class="section-title">Легенда сценариев</h3>
+                    <div class="legend-grid">
+                        <div class="legend-item">
+                            <span class="legend-icon" style="color:#e63946">📡</span>
+                            <div>
+                                <div class="legend-title">GPS ≠ Оператор</div>
+                                <div class="legend-desc">Красная пунктирная линия и маркер — позиция по данным оператора</div>
+                            </div>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-icon" style="color:#d4a017">🛒</span>
+                            <div>
+                                <div class="legend-title">Покупки / Телефон оставлен</div>
+                                <div class="legend-desc">Жёлтый ромб — аномальная покупка, зелёный — обычная</div>
+                            </div>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-icon" style="color:#2d6a4f">💼</span>
+                            <div>
+                                <div class="legend-title">Серая занятость</div>
+                                <div class="legend-desc">Обеденные покупки далеко от заявленного рабочего места</div>
+                            </div>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-icon" style="color:#6c3483">🌙</span>
+                            <div>
+                                <div class="legend-title">Ночное отклонение</div>
+                                <div class="legend-desc">Фиолетовая линия от адреса к фактической ночёвке (23:00-05:00)</div>
+                            </div>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-icon" style="color:#c0392b">🔴</span>
+                            <div>
+                                <div class="legend-title">Инцидент — срез</div>
+                                <div class="legend-desc">Красный круг 500м с маркерами всех мигрантов в зоне</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Crime Scenes -->
+                <section class="sidebar-section incident-list-section">
+                    <h3 class="section-title">
+                        Криминальные инциденты
+                        <span class="incident-count" style="background:#c0392b">6</span>
+                    </h3>
+                    <div id="crime-list" class="incident-list"></div>
+                </section>
+            </div>
+
+            <!-- Migrant detail panel -->
+            <section class="sidebar-section" id="migrant-detail" style="display: none;">
+                <h3 class="section-title">
+                    Карточка мигранта
+                    <button class="close-btn" id="close-detail">&times;</button>
+                </h3>
+                <div id="migrant-info"></div>
+            </section>
+        </aside>
+
+        <!-- Map area -->
+        <main id="map-area">
+            <div id="map"></div>
+
+            <!-- Popup overlay -->
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer">&times;</a>
+                <div id="popup-content"></div>
+            </div>
+
+            <!-- Search -->
+            <div id="search-panel">
+                <input type="text" id="search-input" placeholder="Поиск мигранта (ID или имя)..." autocomplete="off">
+                <div id="search-results" class="search-results"></div>
+            </div>
+
+            <!-- Timeline controls -->
+            <div id="timeline-panel">
+                <div class="timeline-header">
+                    <button class="timeline-btn" id="btn-prev-day" title="Предыдущий день">&#9664;&#9664;</button>
+                    <button class="timeline-btn" id="btn-prev" title="Предыдущий час">&#9664;</button>
+                    <button class="timeline-btn play-btn" id="btn-play" title="Воспроизведение">&#9654;</button>
+                    <button class="timeline-btn" id="btn-next" title="Следующий час">&#9654;</button>
+                    <button class="timeline-btn" id="btn-next-day" title="Следующий день">&#9654;&#9654;</button>
+                    <span class="timeline-speed">
+                        <button class="speed-btn" id="speed-down">&minus;</button>
+                        <span id="speed-label">1x</span>
+                        <button class="speed-btn" id="speed-up">+</button>
+                    </span>
+                    <span class="timeline-datetime" id="current-datetime">—</span>
+                </div>
+                <div class="timeline-slider-wrap">
+                    <input type="range" id="timeline-slider" min="0" max="719" value="0" step="1">
+                </div>
+                <div class="timeline-labels">
+                    <span>1 марта</span>
+                    <span>8 марта</span>
+                    <span>15 марта</span>
+                    <span>22 марта</span>
+                    <span>30 марта</span>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/ol@10.3.0/dist/ol.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,1404 @@
+[
+  {
+    "crime_id": "CR0422",
+    "timestamp": "2026-03-05T22:00:00",
+    "crime_lon": 37.645,
+    "crime_lat": 55.588,
+    "crime_name": "Драка у общежития Бирюлёво",
+    "crime_type": "assault",
+    "radius_m": 500,
+    "migrants_nearby": [
+      {
+        "migrant_id": "M0108",
+        "lon": 37.6386,
+        "lat": 55.590308,
+        "distance_m": 476
+      },
+      {
+        "migrant_id": "M0114",
+        "lon": 37.641068,
+        "lat": 55.591618,
+        "distance_m": 471
+      },
+      {
+        "migrant_id": "M0134",
+        "lon": 37.64902,
+        "lat": 55.588991,
+        "distance_m": 275
+      },
+      {
+        "migrant_id": "M0159",
+        "lon": 37.650846,
+        "lat": 55.585846,
+        "distance_m": 438
+      },
+      {
+        "migrant_id": "M0169",
+        "lon": 37.642397,
+        "lat": 55.587758,
+        "distance_m": 165
+      },
+      {
+        "migrant_id": "M0179",
+        "lon": 37.644326,
+        "lat": 55.590339,
+        "distance_m": 263
+      },
+      {
+        "migrant_id": "M0194",
+        "lon": 37.648469,
+        "lat": 55.58414,
+        "distance_m": 481
+      },
+      {
+        "migrant_id": "M0208",
+        "lon": 37.642481,
+        "lat": 55.589661,
+        "distance_m": 243
+      },
+      {
+        "migrant_id": "M0226",
+        "lon": 37.642805,
+        "lat": 55.585408,
+        "distance_m": 319
+      },
+      {
+        "migrant_id": "M0236",
+        "lon": 37.641268,
+        "lat": 55.585959,
+        "distance_m": 326
+      },
+      {
+        "migrant_id": "M0273",
+        "lon": 37.644276,
+        "lat": 55.59152,
+        "distance_m": 393
+      },
+      {
+        "migrant_id": "M0275",
+        "lon": 37.639151,
+        "lat": 55.587856,
+        "distance_m": 367
+      },
+      {
+        "migrant_id": "M0278",
+        "lon": 37.646376,
+        "lat": 55.58369,
+        "distance_m": 486
+      },
+      {
+        "migrant_id": "M0359",
+        "lon": 37.643691,
+        "lat": 55.589082,
+        "distance_m": 145
+      },
+      {
+        "migrant_id": "M0390",
+        "lon": 37.646879,
+        "lat": 55.588095,
+        "distance_m": 118
+      },
+      {
+        "migrant_id": "M0441",
+        "lon": 37.643763,
+        "lat": 55.587641,
+        "distance_m": 87
+      },
+      {
+        "migrant_id": "M0446",
+        "lon": 37.637969,
+        "lat": 55.586561,
+        "distance_m": 469
+      },
+      {
+        "migrant_id": "M0450",
+        "lon": 37.64,
+        "lat": 55.587676,
+        "distance_m": 316
+      },
+      {
+        "migrant_id": "M0455",
+        "lon": 37.64589,
+        "lat": 55.587545,
+        "distance_m": 75
+      },
+      {
+        "migrant_id": "M0500",
+        "lon": 37.642899,
+        "lat": 55.585203,
+        "distance_m": 337
+      },
+      {
+        "migrant_id": "M0523",
+        "lon": 37.645319,
+        "lat": 55.585214,
+        "distance_m": 310
+      },
+      {
+        "migrant_id": "M0571",
+        "lon": 37.643918,
+        "lat": 55.589927,
+        "distance_m": 224
+      },
+      {
+        "migrant_id": "M0580",
+        "lon": 37.642454,
+        "lat": 55.583782,
+        "distance_m": 495
+      },
+      {
+        "migrant_id": "M0591",
+        "lon": 37.648151,
+        "lat": 55.589263,
+        "distance_m": 242
+      },
+      {
+        "migrant_id": "M0638",
+        "lon": 37.64111,
+        "lat": 55.584449,
+        "distance_m": 464
+      },
+      {
+        "migrant_id": "M0640",
+        "lon": 37.639411,
+        "lat": 55.584853,
+        "distance_m": 495
+      },
+      {
+        "migrant_id": "M0660",
+        "lon": 37.647938,
+        "lat": 55.586796,
+        "distance_m": 228
+      },
+      {
+        "migrant_id": "M0728",
+        "lon": 37.637697,
+        "lat": 55.587849,
+        "distance_m": 458
+      },
+      {
+        "migrant_id": "M0729",
+        "lon": 37.641747,
+        "lat": 55.584501,
+        "distance_m": 439
+      },
+      {
+        "migrant_id": "M0752",
+        "lon": 37.639578,
+        "lat": 55.584859,
+        "distance_m": 487
+      },
+      {
+        "migrant_id": "M0771",
+        "lon": 37.644496,
+        "lat": 55.592459,
+        "distance_m": 496
+      },
+      {
+        "migrant_id": "M0828",
+        "lon": 37.638252,
+        "lat": 55.588826,
+        "distance_m": 433
+      },
+      {
+        "migrant_id": "M0871",
+        "lon": 37.64848,
+        "lat": 55.584458,
+        "distance_m": 450
+      },
+      {
+        "migrant_id": "M0916",
+        "lon": 37.642601,
+        "lat": 55.590466,
+        "distance_m": 312
+      },
+      {
+        "migrant_id": "M0929",
+        "lon": 37.640015,
+        "lat": 55.585885,
+        "distance_m": 391
+      },
+      {
+        "migrant_id": "M0952",
+        "lon": 37.639157,
+        "lat": 55.586391,
+        "distance_m": 408
+      },
+      {
+        "migrant_id": "M0985",
+        "lon": 37.638625,
+        "lat": 55.589206,
+        "distance_m": 422
+      },
+      {
+        "migrant_id": "M0986",
+        "lon": 37.644695,
+        "lat": 55.591893,
+        "distance_m": 433
+      }
+    ],
+    "total_nearby": 38
+  },
+  {
+    "crime_id": "CR0902",
+    "timestamp": "2026-03-10T02:00:00",
+    "crime_lon": 37.75,
+    "crime_lat": 55.679,
+    "crime_name": "Кража в магазине Люблино",
+    "crime_type": "theft",
+    "radius_m": 500,
+    "migrants_nearby": [
+      {
+        "migrant_id": "M0001",
+        "lon": 37.750336,
+        "lat": 55.681647,
+        "distance_m": 295
+      },
+      {
+        "migrant_id": "M0004",
+        "lon": 37.74483,
+        "lat": 55.68238,
+        "distance_m": 495
+      },
+      {
+        "migrant_id": "M0007",
+        "lon": 37.751571,
+        "lat": 55.676272,
+        "distance_m": 318
+      },
+      {
+        "migrant_id": "M0028",
+        "lon": 37.751935,
+        "lat": 55.675183,
+        "distance_m": 441
+      },
+      {
+        "migrant_id": "M0042",
+        "lon": 37.744151,
+        "lat": 55.679916,
+        "distance_m": 380
+      },
+      {
+        "migrant_id": "M0050",
+        "lon": 37.74741,
+        "lat": 55.67829,
+        "distance_m": 180
+      },
+      {
+        "migrant_id": "M0054",
+        "lon": 37.744413,
+        "lat": 55.680812,
+        "distance_m": 403
+      },
+      {
+        "migrant_id": "M0069",
+        "lon": 37.749509,
+        "lat": 55.676041,
+        "distance_m": 330
+      },
+      {
+        "migrant_id": "M0093",
+        "lon": 37.754297,
+        "lat": 55.679836,
+        "distance_m": 284
+      },
+      {
+        "migrant_id": "M0097",
+        "lon": 37.74596,
+        "lat": 55.675952,
+        "distance_m": 422
+      },
+      {
+        "migrant_id": "M0101",
+        "lon": 37.750711,
+        "lat": 55.682994,
+        "distance_m": 446
+      },
+      {
+        "migrant_id": "M0104",
+        "lon": 37.744424,
+        "lat": 55.680286,
+        "distance_m": 377
+      },
+      {
+        "migrant_id": "M0166",
+        "lon": 37.745928,
+        "lat": 55.679212,
+        "distance_m": 256
+      },
+      {
+        "migrant_id": "M0188",
+        "lon": 37.744689,
+        "lat": 55.676556,
+        "distance_m": 429
+      },
+      {
+        "migrant_id": "M0191",
+        "lon": 37.747271,
+        "lat": 55.68323,
+        "distance_m": 500
+      },
+      {
+        "migrant_id": "M0211",
+        "lon": 37.755583,
+        "lat": 55.68139,
+        "distance_m": 439
+      },
+      {
+        "migrant_id": "M0251",
+        "lon": 37.752798,
+        "lat": 55.677458,
+        "distance_m": 245
+      },
+      {
+        "migrant_id": "M0254",
+        "lon": 37.755822,
+        "lat": 55.67836,
+        "distance_m": 371
+      },
+      {
+        "migrant_id": "M0269",
+        "lon": 37.74797,
+        "lat": 55.680707,
+        "distance_m": 228
+      },
+      {
+        "migrant_id": "M0288",
+        "lon": 37.74826,
+        "lat": 55.681008,
+        "distance_m": 248
+      },
+      {
+        "migrant_id": "M0312",
+        "lon": 37.757627,
+        "lat": 55.679709,
+        "distance_m": 484
+      },
+      {
+        "migrant_id": "M0326",
+        "lon": 37.743196,
+        "lat": 55.680552,
+        "distance_m": 459
+      },
+      {
+        "migrant_id": "M0328",
+        "lon": 37.744435,
+        "lat": 55.677753,
+        "distance_m": 375
+      },
+      {
+        "migrant_id": "M0339",
+        "lon": 37.752059,
+        "lat": 55.681306,
+        "distance_m": 287
+      },
+      {
+        "migrant_id": "M0340",
+        "lon": 37.749074,
+        "lat": 55.683086,
+        "distance_m": 457
+      },
+      {
+        "migrant_id": "M0360",
+        "lon": 37.743106,
+        "lat": 55.678838,
+        "distance_m": 432
+      },
+      {
+        "migrant_id": "M0373",
+        "lon": 37.743878,
+        "lat": 55.681282,
+        "distance_m": 459
+      },
+      {
+        "migrant_id": "M0374",
+        "lon": 37.750271,
+        "lat": 55.679935,
+        "distance_m": 105
+      },
+      {
+        "migrant_id": "M0376",
+        "lon": 37.747016,
+        "lat": 55.682171,
+        "distance_m": 398
+      },
+      {
+        "migrant_id": "M0385",
+        "lon": 37.748597,
+        "lat": 55.676664,
+        "distance_m": 274
+      },
+      {
+        "migrant_id": "M0390",
+        "lon": 37.754264,
+        "lat": 55.680355,
+        "distance_m": 306
+      },
+      {
+        "migrant_id": "M0400",
+        "lon": 37.756388,
+        "lat": 55.679113,
+        "distance_m": 400
+      },
+      {
+        "migrant_id": "M0422",
+        "lon": 37.757135,
+        "lat": 55.680826,
+        "distance_m": 490
+      },
+      {
+        "migrant_id": "M0431",
+        "lon": 37.755519,
+        "lat": 55.675767,
+        "distance_m": 498
+      },
+      {
+        "migrant_id": "M0442",
+        "lon": 37.752132,
+        "lat": 55.679614,
+        "distance_m": 150
+      },
+      {
+        "migrant_id": "M0482",
+        "lon": 37.750013,
+        "lat": 55.677158,
+        "distance_m": 204
+      },
+      {
+        "migrant_id": "M0492",
+        "lon": 37.752923,
+        "lat": 55.679112,
+        "distance_m": 183
+      },
+      {
+        "migrant_id": "M0501",
+        "lon": 37.751279,
+        "lat": 55.678047,
+        "distance_m": 133
+      },
+      {
+        "migrant_id": "M0520",
+        "lon": 37.749545,
+        "lat": 55.682618,
+        "distance_m": 403
+      },
+      {
+        "migrant_id": "M0526",
+        "lon": 37.754174,
+        "lat": 55.679013,
+        "distance_m": 261
+      },
+      {
+        "migrant_id": "M0616",
+        "lon": 37.745495,
+        "lat": 55.682452,
+        "distance_m": 476
+      },
+      {
+        "migrant_id": "M0630",
+        "lon": 37.754893,
+        "lat": 55.678576,
+        "distance_m": 310
+      },
+      {
+        "migrant_id": "M0643",
+        "lon": 37.74327,
+        "lat": 55.677477,
+        "distance_m": 454
+      },
+      {
+        "migrant_id": "M0661",
+        "lon": 37.752474,
+        "lat": 55.677708,
+        "distance_m": 211
+      },
+      {
+        "migrant_id": "M0701",
+        "lon": 37.750334,
+        "lat": 55.682416,
+        "distance_m": 380
+      },
+      {
+        "migrant_id": "M0716",
+        "lon": 37.750469,
+        "lat": 55.677087,
+        "distance_m": 214
+      },
+      {
+        "migrant_id": "M0719",
+        "lon": 37.752991,
+        "lat": 55.678197,
+        "distance_m": 207
+      },
+      {
+        "migrant_id": "M0733",
+        "lon": 37.751703,
+        "lat": 55.67928,
+        "distance_m": 111
+      },
+      {
+        "migrant_id": "M0754",
+        "lon": 37.744478,
+        "lat": 55.67793,
+        "distance_m": 365
+      },
+      {
+        "migrant_id": "M0765",
+        "lon": 37.757043,
+        "lat": 55.678845,
+        "distance_m": 441
+      },
+      {
+        "migrant_id": "M0803",
+        "lon": 37.747565,
+        "lat": 55.674919,
+        "distance_m": 478
+      },
+      {
+        "migrant_id": "M0852",
+        "lon": 37.7465,
+        "lat": 55.681553,
+        "distance_m": 358
+      },
+      {
+        "migrant_id": "M0873",
+        "lon": 37.750583,
+        "lat": 55.683109,
+        "distance_m": 458
+      },
+      {
+        "migrant_id": "M0893",
+        "lon": 37.749145,
+        "lat": 55.680266,
+        "distance_m": 150
+      },
+      {
+        "migrant_id": "M0906",
+        "lon": 37.746027,
+        "lat": 55.681058,
+        "distance_m": 338
+      },
+      {
+        "migrant_id": "M0944",
+        "lon": 37.751326,
+        "lat": 55.676063,
+        "distance_m": 336
+      },
+      {
+        "migrant_id": "M0950",
+        "lon": 37.756526,
+        "lat": 55.67888,
+        "distance_m": 409
+      },
+      {
+        "migrant_id": "M0957",
+        "lon": 37.746676,
+        "lat": 55.681613,
+        "distance_m": 357
+      },
+      {
+        "migrant_id": "M0997",
+        "lon": 37.748798,
+        "lat": 55.681075,
+        "distance_m": 242
+      },
+      {
+        "migrant_id": "M0998",
+        "lon": 37.757153,
+        "lat": 55.680405,
+        "distance_m": 474
+      }
+    ],
+    "total_nearby": 60
+  },
+  {
+    "crime_id": "CR1419",
+    "timestamp": "2026-03-15T19:00:00",
+    "crime_lon": 37.823,
+    "crime_lat": 55.627,
+    "crime_name": "Разбой у рынка Садовод",
+    "crime_type": "robbery",
+    "radius_m": 500,
+    "migrants_nearby": [],
+    "total_nearby": 0
+  },
+  {
+    "crime_id": "CR2023",
+    "timestamp": "2026-03-21T23:00:00",
+    "crime_lon": 37.78,
+    "crime_lat": 55.701,
+    "crime_name": "Нарушение общественного порядка Кузьминки",
+    "crime_type": "disorder",
+    "radius_m": 500,
+    "migrants_nearby": [
+      {
+        "migrant_id": "M0021",
+        "lon": 37.787056,
+        "lat": 55.70065,
+        "distance_m": 443
+      },
+      {
+        "migrant_id": "M0086",
+        "lon": 37.785995,
+        "lat": 55.699335,
+        "distance_m": 418
+      },
+      {
+        "migrant_id": "M0107",
+        "lon": 37.779703,
+        "lat": 55.697053,
+        "distance_m": 439
+      },
+      {
+        "migrant_id": "M0117",
+        "lon": 37.777884,
+        "lat": 55.702576,
+        "distance_m": 219
+      },
+      {
+        "migrant_id": "M0124",
+        "lon": 37.78237,
+        "lat": 55.704641,
+        "distance_m": 430
+      },
+      {
+        "migrant_id": "M0138",
+        "lon": 37.779042,
+        "lat": 55.698077,
+        "distance_m": 330
+      },
+      {
+        "migrant_id": "M0171",
+        "lon": 37.787666,
+        "lat": 55.699819,
+        "distance_m": 497
+      },
+      {
+        "migrant_id": "M0178",
+        "lon": 37.775324,
+        "lat": 55.702898,
+        "distance_m": 360
+      },
+      {
+        "migrant_id": "M0218",
+        "lon": 37.785077,
+        "lat": 55.699954,
+        "distance_m": 338
+      },
+      {
+        "migrant_id": "M0225",
+        "lon": 37.777161,
+        "lat": 55.698053,
+        "distance_m": 372
+      },
+      {
+        "migrant_id": "M0229",
+        "lon": 37.778124,
+        "lat": 55.702157,
+        "distance_m": 174
+      },
+      {
+        "migrant_id": "M0249",
+        "lon": 37.78219,
+        "lat": 55.704018,
+        "distance_m": 362
+      },
+      {
+        "migrant_id": "M0256",
+        "lon": 37.781896,
+        "lat": 55.696783,
+        "distance_m": 483
+      },
+      {
+        "migrant_id": "M0277",
+        "lon": 37.780484,
+        "lat": 55.702496,
+        "distance_m": 169
+      },
+      {
+        "migrant_id": "M0289",
+        "lon": 37.779495,
+        "lat": 55.698617,
+        "distance_m": 266
+      },
+      {
+        "migrant_id": "M0299",
+        "lon": 37.78387,
+        "lat": 55.697515,
+        "distance_m": 456
+      },
+      {
+        "migrant_id": "M0323",
+        "lon": 37.783072,
+        "lat": 55.699687,
+        "distance_m": 241
+      },
+      {
+        "migrant_id": "M0350",
+        "lon": 37.779636,
+        "lat": 55.699819,
+        "distance_m": 133
+      },
+      {
+        "migrant_id": "M0366",
+        "lon": 37.783674,
+        "lat": 55.700625,
+        "distance_m": 234
+      },
+      {
+        "migrant_id": "M0396",
+        "lon": 37.783424,
+        "lat": 55.698116,
+        "distance_m": 385
+      },
+      {
+        "migrant_id": "M0424",
+        "lon": 37.78327,
+        "lat": 55.700728,
+        "distance_m": 207
+      },
+      {
+        "migrant_id": "M0436",
+        "lon": 37.783677,
+        "lat": 55.698726,
+        "distance_m": 341
+      },
+      {
+        "migrant_id": "M0443",
+        "lon": 37.784897,
+        "lat": 55.701795,
+        "distance_m": 319
+      },
+      {
+        "migrant_id": "M0445",
+        "lon": 37.781489,
+        "lat": 55.698479,
+        "distance_m": 295
+      },
+      {
+        "migrant_id": "M0484",
+        "lon": 37.775266,
+        "lat": 55.698708,
+        "distance_m": 390
+      },
+      {
+        "migrant_id": "M0506",
+        "lon": 37.776569,
+        "lat": 55.700592,
+        "distance_m": 219
+      },
+      {
+        "migrant_id": "M0507",
+        "lon": 37.78692,
+        "lat": 55.699457,
+        "distance_m": 466
+      },
+      {
+        "migrant_id": "M0518",
+        "lon": 37.784984,
+        "lat": 55.698068,
+        "distance_m": 451
+      },
+      {
+        "migrant_id": "M0525",
+        "lon": 37.781178,
+        "lat": 55.697835,
+        "distance_m": 359
+      },
+      {
+        "migrant_id": "M0533",
+        "lon": 37.778437,
+        "lat": 55.699825,
+        "distance_m": 163
+      },
+      {
+        "migrant_id": "M0546",
+        "lon": 37.778935,
+        "lat": 55.697994,
+        "distance_m": 340
+      },
+      {
+        "migrant_id": "M0548",
+        "lon": 37.775076,
+        "lat": 55.700137,
+        "distance_m": 323
+      },
+      {
+        "migrant_id": "M0553",
+        "lon": 37.774989,
+        "lat": 55.701137,
+        "distance_m": 314
+      },
+      {
+        "migrant_id": "M0554",
+        "lon": 37.784581,
+        "lat": 55.69813,
+        "distance_m": 428
+      },
+      {
+        "migrant_id": "M0555",
+        "lon": 37.77842,
+        "lat": 55.696948,
+        "distance_m": 461
+      },
+      {
+        "migrant_id": "M0558",
+        "lon": 37.780664,
+        "lat": 55.700543,
+        "distance_m": 66
+      },
+      {
+        "migrant_id": "M0565",
+        "lon": 37.776318,
+        "lat": 55.69953,
+        "distance_m": 282
+      },
+      {
+        "migrant_id": "M0570",
+        "lon": 37.784803,
+        "lat": 55.698142,
+        "distance_m": 437
+      },
+      {
+        "migrant_id": "M0622",
+        "lon": 37.781192,
+        "lat": 55.697289,
+        "distance_m": 419
+      },
+      {
+        "migrant_id": "M0666",
+        "lon": 37.782963,
+        "lat": 55.703888,
+        "distance_m": 370
+      },
+      {
+        "migrant_id": "M0668",
+        "lon": 37.784452,
+        "lat": 55.700241,
+        "distance_m": 291
+      },
+      {
+        "migrant_id": "M0677",
+        "lon": 37.785703,
+        "lat": 55.701437,
+        "distance_m": 360
+      },
+      {
+        "migrant_id": "M0679",
+        "lon": 37.776916,
+        "lat": 55.70119,
+        "distance_m": 194
+      },
+      {
+        "migrant_id": "M0690",
+        "lon": 37.775839,
+        "lat": 55.699366,
+        "distance_m": 317
+      },
+      {
+        "migrant_id": "M0703",
+        "lon": 37.775338,
+        "lat": 55.703292,
+        "distance_m": 387
+      },
+      {
+        "migrant_id": "M0706",
+        "lon": 37.779885,
+        "lat": 55.698475,
+        "distance_m": 280
+      },
+      {
+        "migrant_id": "M0710",
+        "lon": 37.78204,
+        "lat": 55.698918,
+        "distance_m": 264
+      },
+      {
+        "migrant_id": "M0739",
+        "lon": 37.778268,
+        "lat": 55.701057,
+        "distance_m": 109
+      },
+      {
+        "migrant_id": "M0775",
+        "lon": 37.780846,
+        "lat": 55.704202,
+        "distance_m": 359
+      },
+      {
+        "migrant_id": "M0779",
+        "lon": 37.785995,
+        "lat": 55.701388,
+        "distance_m": 377
+      },
+      {
+        "migrant_id": "M0788",
+        "lon": 37.775253,
+        "lat": 55.698118,
+        "distance_m": 436
+      },
+      {
+        "migrant_id": "M0833",
+        "lon": 37.784282,
+        "lat": 55.697448,
+        "distance_m": 477
+      },
+      {
+        "migrant_id": "M0861",
+        "lon": 37.780425,
+        "lat": 55.700641,
+        "distance_m": 48
+      },
+      {
+        "migrant_id": "M0863",
+        "lon": 37.773072,
+        "lat": 55.699954,
+        "distance_m": 449
+      },
+      {
+        "migrant_id": "M0903",
+        "lon": 37.780292,
+        "lat": 55.700405,
+        "distance_m": 69
+      },
+      {
+        "migrant_id": "M0909",
+        "lon": 37.781504,
+        "lat": 55.702044,
+        "distance_m": 149
+      },
+      {
+        "migrant_id": "M0915",
+        "lon": 37.786568,
+        "lat": 55.701564,
+        "distance_m": 416
+      },
+      {
+        "migrant_id": "M0923",
+        "lon": 37.776445,
+        "lat": 55.701344,
+        "distance_m": 226
+      },
+      {
+        "migrant_id": "M0941",
+        "lon": 37.778843,
+        "lat": 55.704798,
+        "distance_m": 428
+      },
+      {
+        "migrant_id": "M0948",
+        "lon": 37.779435,
+        "lat": 55.696969,
+        "distance_m": 449
+      },
+      {
+        "migrant_id": "M0953",
+        "lon": 37.777167,
+        "lat": 55.698039,
+        "distance_m": 373
+      },
+      {
+        "migrant_id": "M0996",
+        "lon": 37.77676,
+        "lat": 55.700576,
+        "distance_m": 208
+      }
+    ],
+    "total_nearby": 62
+  },
+  {
+    "crime_id": "CR2501",
+    "timestamp": "2026-03-26T01:00:00",
+    "crime_lon": 37.638,
+    "crime_lat": 55.702,
+    "crime_name": "Инцидент у стройки ЗИЛ",
+    "crime_type": "assault",
+    "radius_m": 500,
+    "migrants_nearby": [],
+    "total_nearby": 0
+  },
+  {
+    "crime_id": "CR1015",
+    "timestamp": "2026-03-11T15:00:00",
+    "crime_lon": 37.431,
+    "crime_lat": 55.576,
+    "crime_name": "Конфликт на Фуд-Сити",
+    "crime_type": "disorder",
+    "radius_m": 500,
+    "migrants_nearby": [
+      {
+        "migrant_id": "M0027",
+        "lon": 37.427018,
+        "lat": 55.576635,
+        "distance_m": 260
+      },
+      {
+        "migrant_id": "M0033",
+        "lon": 37.431366,
+        "lat": 55.575105,
+        "distance_m": 102
+      },
+      {
+        "migrant_id": "M0069",
+        "lon": 37.431409,
+        "lat": 55.576737,
+        "distance_m": 86
+      },
+      {
+        "migrant_id": "M0076",
+        "lon": 37.432357,
+        "lat": 55.573019,
+        "distance_m": 342
+      },
+      {
+        "migrant_id": "M0086",
+        "lon": 37.426209,
+        "lat": 55.575357,
+        "distance_m": 309
+      },
+      {
+        "migrant_id": "M0093",
+        "lon": 37.429218,
+        "lat": 55.577058,
+        "distance_m": 162
+      },
+      {
+        "migrant_id": "M0104",
+        "lon": 37.428314,
+        "lat": 55.574107,
+        "distance_m": 269
+      },
+      {
+        "migrant_id": "M0110",
+        "lon": 37.425876,
+        "lat": 55.574504,
+        "distance_m": 362
+      },
+      {
+        "migrant_id": "M0121",
+        "lon": 37.438022,
+        "lat": 55.577219,
+        "distance_m": 461
+      },
+      {
+        "migrant_id": "M0138",
+        "lon": 37.429781,
+        "lat": 55.575496,
+        "distance_m": 95
+      },
+      {
+        "migrant_id": "M0151",
+        "lon": 37.425255,
+        "lat": 55.576566,
+        "distance_m": 366
+      },
+      {
+        "migrant_id": "M0167",
+        "lon": 37.427599,
+        "lat": 55.579339,
+        "distance_m": 428
+      },
+      {
+        "migrant_id": "M0194",
+        "lon": 37.438516,
+        "lat": 55.575161,
+        "distance_m": 481
+      },
+      {
+        "migrant_id": "M0196",
+        "lon": 37.43059,
+        "lat": 55.574563,
+        "distance_m": 162
+      },
+      {
+        "migrant_id": "M0224",
+        "lon": 37.43469,
+        "lat": 55.576637,
+        "distance_m": 242
+      },
+      {
+        "migrant_id": "M0226",
+        "lon": 37.431033,
+        "lat": 55.579635,
+        "distance_m": 403
+      },
+      {
+        "migrant_id": "M0234",
+        "lon": 37.428169,
+        "lat": 55.577855,
+        "distance_m": 272
+      },
+      {
+        "migrant_id": "M0257",
+        "lon": 37.424472,
+        "lat": 55.575738,
+        "distance_m": 411
+      },
+      {
+        "migrant_id": "M0267",
+        "lon": 37.43345,
+        "lat": 55.578136,
+        "distance_m": 283
+      },
+      {
+        "migrant_id": "M0309",
+        "lon": 37.431957,
+        "lat": 55.579284,
+        "distance_m": 369
+      },
+      {
+        "migrant_id": "M0319",
+        "lon": 37.438892,
+        "lat": 55.576126,
+        "distance_m": 495
+      },
+      {
+        "migrant_id": "M0329",
+        "lon": 37.425968,
+        "lat": 55.576302,
+        "distance_m": 318
+      },
+      {
+        "migrant_id": "M0337",
+        "lon": 37.431954,
+        "lat": 55.574285,
+        "distance_m": 200
+      },
+      {
+        "migrant_id": "M0353",
+        "lon": 37.431829,
+        "lat": 55.573288,
+        "distance_m": 305
+      },
+      {
+        "migrant_id": "M0358",
+        "lon": 37.430135,
+        "lat": 55.573393,
+        "distance_m": 294
+      },
+      {
+        "migrant_id": "M0370",
+        "lon": 37.427482,
+        "lat": 55.578541,
+        "distance_m": 358
+      },
+      {
+        "migrant_id": "M0388",
+        "lon": 37.425794,
+        "lat": 55.576511,
+        "distance_m": 332
+      },
+      {
+        "migrant_id": "M0404",
+        "lon": 37.427793,
+        "lat": 55.579807,
+        "distance_m": 468
+      },
+      {
+        "migrant_id": "M0407",
+        "lon": 37.436878,
+        "lat": 55.5769,
+        "distance_m": 382
+      },
+      {
+        "migrant_id": "M0425",
+        "lon": 37.42464,
+        "lat": 55.574644,
+        "distance_m": 427
+      },
+      {
+        "migrant_id": "M0447",
+        "lon": 37.425841,
+        "lat": 55.578054,
+        "distance_m": 396
+      },
+      {
+        "migrant_id": "M0457",
+        "lon": 37.424455,
+        "lat": 55.577187,
+        "distance_m": 431
+      },
+      {
+        "migrant_id": "M0479",
+        "lon": 37.429165,
+        "lat": 55.578135,
+        "distance_m": 263
+      },
+      {
+        "migrant_id": "M0481",
+        "lon": 37.431203,
+        "lat": 55.574376,
+        "distance_m": 181
+      },
+      {
+        "migrant_id": "M0491",
+        "lon": 37.429738,
+        "lat": 55.572296,
+        "distance_m": 419
+      },
+      {
+        "migrant_id": "M0508",
+        "lon": 37.434107,
+        "lat": 55.575434,
+        "distance_m": 205
+      },
+      {
+        "migrant_id": "M0514",
+        "lon": 37.435053,
+        "lat": 55.574826,
+        "distance_m": 286
+      },
+      {
+        "migrant_id": "M0555",
+        "lon": 37.435376,
+        "lat": 55.57537,
+        "distance_m": 283
+      },
+      {
+        "migrant_id": "M0556",
+        "lon": 37.436239,
+        "lat": 55.579279,
+        "distance_m": 490
+      },
+      {
+        "migrant_id": "M0573",
+        "lon": 37.437865,
+        "lat": 55.574022,
+        "distance_m": 484
+      },
+      {
+        "migrant_id": "M0576",
+        "lon": 37.425961,
+        "lat": 55.577049,
+        "distance_m": 337
+      },
+      {
+        "migrant_id": "M0577",
+        "lon": 37.43327,
+        "lat": 55.576009,
+        "distance_m": 142
+      },
+      {
+        "migrant_id": "M0594",
+        "lon": 37.432034,
+        "lat": 55.579347,
+        "distance_m": 377
+      },
+      {
+        "migrant_id": "M0625",
+        "lon": 37.434528,
+        "lat": 55.57721,
+        "distance_m": 259
+      },
+      {
+        "migrant_id": "M0651",
+        "lon": 37.438623,
+        "lat": 55.575184,
+        "distance_m": 487
+      },
+      {
+        "migrant_id": "M0654",
+        "lon": 37.430901,
+        "lat": 55.579221,
+        "distance_m": 358
+      },
+      {
+        "migrant_id": "M0707",
+        "lon": 37.431663,
+        "lat": 55.572898,
+        "distance_m": 347
+      },
+      {
+        "migrant_id": "M0721",
+        "lon": 37.426427,
+        "lat": 55.576766,
+        "distance_m": 299
+      },
+      {
+        "migrant_id": "M0740",
+        "lon": 37.434085,
+        "lat": 55.573206,
+        "distance_m": 366
+      },
+      {
+        "migrant_id": "M0745",
+        "lon": 37.426874,
+        "lat": 55.575604,
+        "distance_m": 263
+      },
+      {
+        "migrant_id": "M0746",
+        "lon": 37.433122,
+        "lat": 55.580026,
+        "distance_m": 466
+      },
+      {
+        "migrant_id": "M0752",
+        "lon": 37.431426,
+        "lat": 55.574329,
+        "distance_m": 187
+      },
+      {
+        "migrant_id": "M0770",
+        "lon": 37.430977,
+        "lat": 55.580248,
+        "distance_m": 472
+      },
+      {
+        "migrant_id": "M0774",
+        "lon": 37.430208,
+        "lat": 55.573253,
+        "distance_m": 309
+      },
+      {
+        "migrant_id": "M0793",
+        "lon": 37.427148,
+        "lat": 55.578045,
+        "distance_m": 332
+      },
+      {
+        "migrant_id": "M0812",
+        "lon": 37.4347,
+        "lat": 55.576849,
+        "distance_m": 251
+      },
+      {
+        "migrant_id": "M0839",
+        "lon": 37.429643,
+        "lat": 55.572633,
+        "distance_m": 383
+      },
+      {
+        "migrant_id": "M0850",
+        "lon": 37.436129,
+        "lat": 55.572905,
+        "distance_m": 471
+      },
+      {
+        "migrant_id": "M0880",
+        "lon": 37.431916,
+        "lat": 55.579307,
+        "distance_m": 372
+      },
+      {
+        "migrant_id": "M0934",
+        "lon": 37.430431,
+        "lat": 55.575128,
+        "distance_m": 103
+      },
+      {
+        "migrant_id": "M0939",
+        "lon": 37.432638,
+        "lat": 55.575516,
+        "distance_m": 116
+      },
+      {
+        "migrant_id": "M0960",
+        "lon": 37.43044,
+        "lat": 55.575359,
+        "distance_m": 79
+      }
+    ],
+    "total_nearby": 62
+  }
+]
